@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AD-DISPLAY[TEST]</title>
+    <link rel="stylesheet" href="css/index.css"></style>
+    <script async="true" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script type="text/javascript" src="js/algoad/ad-display-bundle.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+</head>
+<body>
+    <h1>AD DISPLAY DEMO</h1>
+    <div class="container flex-col">
+      <div class="items-group flex-col">
+        <div class="group-label">Endpoint</div>
+
+        <div class="item flex-row">
+          <input class="endpoint" name="endpoint" type="text"/>
+        </div>
+      </div>
+
+      <div class="items-group flex-col">
+        <div class="group-label">slot</div>
+        <div class="item flex-row">
+          <div class="label">af</div>
+          <input name="af" type="text"/>
+        </div>
+
+        <div class="item flex-row">
+          <div class="label">id</div>
+          <input type="text" name="id"/>
+        </div>
+
+        <div class="item flex-row">
+          <div class="label">iu</div>
+          <input type="text" name="iu"/>
+        </div>
+
+        <div class="item flex-row">
+          <div class="label">sz</div>
+          <input type="text" name="sz"/>
+        </div>
+      </div>
+      
+      <div class="items-group flex-col">
+        <div class="group-label">optional_param</div>
+
+        <div class="item flex-row">
+          <div class="label">cust_param</div>
+          <input type="text" name="cust_params"/>
+        </div>
+      </div>
+
+      
+      <div class="items-group flex-col">
+        <div class="group-label">impression host</div>
+
+        <div class="item flex-row">
+          <div class="label">host</div>
+          <input type="text" name="impression_host"/>
+        </div>
+      </div>
+      <div class="items-group flex-col">
+        <div class="item flex-row">
+          <div name="uatSplash" class="btn" onclick="onSelectAdType(event)">SPLASH</div>
+          <div name="uatBanner" class="btn" onclick="onSelectAdType(event)">BANNER</div>
+        </div>
+      </div>
+
+      <div onclick="onSubmit()" class="btn-submit">Submit</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+.container {
+  width: 50vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+
+.items-group {
+  margin-bottom: 12px;
+}
+
+.items-group > .group-label {
+  font-weight: bold;
+  font-size: 2cqw;
+}
+
+.items-group > .item {
+  padding: 6px 12px;
+}
+
+.items-group > .item > input{
+  font-size: 1.2cqw;
+  display: flex;
+  flex-shrink: 0;
+  flex: 1;
+}
+
+.items-group > .item > .label {
+  font-size: 1.2cqw;
+  min-width: 120px;
+}
+
+.container > .btn-submit {
+  width: 160px;
+  height: 60px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: orangered;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+.item > .btn {
+  margin: 0 15px 0 15px;
+  width: 220px;
+  height: 30px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px orangered solid;
+  font-size: 12px;
+  font-weight: bold;
+  color: orangered;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+.item > .btn:hover {
+  color: white;
+  background-color: orangered;
+}
+
+.container > .btn-submit:hover {
+  filter: brightness(110%);
+}
+
+.container > .btn-submit:active {
+  filter: brightness(90%);
+}
+
+.endpoint {
+  flex: 1;
+}
